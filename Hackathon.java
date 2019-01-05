@@ -100,8 +100,8 @@ public class Hackathon extends User {
                     userName = scan.nextLine();
 
                     if (deregister.equalsIgnoreCase("h"))   {
-                        map.get(userName).deleteUser();
-                        map.remove(userName);
+                        map.get(userName).deleteUser(); // gets specific instance and deletes it
+                        map.remove(userName); // deletes userName
 
                         out.print("\nDo you have a team? (Y/N): ");
                         deregister = scan.nextLine();
